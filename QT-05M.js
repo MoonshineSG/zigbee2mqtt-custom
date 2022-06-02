@@ -158,7 +158,7 @@ const definition = {
 
         exposes.numeric('manual', ea.STATE_SET).withValueMin(0).withValueMax(100).withValueStep(5).withUnit('%').withDescription('Set valve to %.'),
 
-        exposes.numeric('timer', ea.STATE_SET).withValueMin(0).withUnit('sec').withDescription('Auto shutdown in seconds.'),
+        exposes.numeric('timer', ea.STATE_SET).withValueMin(0).withValueMax(14400).withUnit('sec').withDescription('Auto shutdown in seconds.'),
         exposes.numeric('automatic', ea.STATE_SET).withValueMin(0).withValueMax(100).withValueStep(5).withUnit('%').withDescription('Set valve to % with auto shutdown.'),
                 
         e.battery(),        
